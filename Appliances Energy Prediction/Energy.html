@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style>
+    /* Style for the body */
+    body {
+      background-color: #f6f5f7;
+      font-family: 'Arimo', sans-serif;
+    }
+    /* Style for the form container */
+    .login {
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      margin: 100px auto;
+      padding: 20px;
+      width: 400px;
+    }
+    /* Style for the heading */
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 36px;
+      margin: 0 0 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    /* Style for the input fields */
+    input[type=text] {
+      border-radius: 5px;
+      border: none;
+      font-family: 'Hind', sans-serif;
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+    }
+    /* Style for the submit button */
+    button[type=submit] {
+      background-color: #4286f4;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+    }
+    /* Style for the prediction text */
+    .prediction-text {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Energy Prediction</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="RH_1" placeholder="RH_1" required="required" />
+        <input type="text" name="T2" placeholder="T2" required="required" />
+        <input type="text" name="T3" placeholder="T3" required="required" />
+    	<input type="text" name="T6" placeholder="T6" required="required" />
+        <input type="text" name="T_out" placeholder="T_out" required="required" />
+	<input type="text" name="Windspeed" placeholder="Windspeed" required="required" />
+	<input type="text" name="RH_8" placeholder="RH_8" required="required" />
+        <input type="text" name="RH_6" placeholder="RH_6" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+   {{ prediction_text }}
+ </div>
+</body>
+
+</html>
