@@ -31,3 +31,6 @@
 * rv2, Random variable 2, nondimensional
 
 Where indicated, hourly data (then interpolated) from the nearest airport weather station (Chievres Airport, Belgium) was downloaded from a public data set from Reliable Prognosis, rp5.ru. Permission was obtained from Reliable Prognosis for the distribution of the 4.5 months of weather data.
+
+### Web Application Interface
+![Energy](https://user-images.githubusercontent.com/66309302/220941920-9a3adec8-58a9-4988-8568-f75b8c5484cf.PNG)
