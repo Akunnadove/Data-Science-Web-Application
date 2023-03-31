@@ -1,5 +1,5 @@
 # Dementia Pro Web Application
-The goal and function of this application is too test if a user is demented or unndemented based on the inputs given. A machine learning model has been trained and saved with the sole aim of making the prediction. The model and web application are deployed using the python flask library.
+The goal and function of this application is to test if a user is demented or unndemented based on the inputs given. A machine learning model has been trained and saved with the sole aim of making the prediction. The model and web application are deployed using the python flask library.
 ## Project Objectives
 * Collect data
 * Perform Exploratory data analysis on the dataset
