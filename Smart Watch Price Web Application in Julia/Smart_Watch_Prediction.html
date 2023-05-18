@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch App</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+
+        h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <!-- header section starts  -->
+        <header>
+            <div class="user">
+                <img src="static/Dementia.jpg" alt="">
+                <h3 class="name">Dashboard</h3>
+                <p class="post">Smart Watch Price Predictor</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/">home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header section ends -->
+
+
+        <div id="menu" class="fas fa-bars"></div>
+
+
+        <!-- home section starts  -->
+        <section class="home" id="home">
+
+            <h1>Smart Watch<span>Price</span></h1>
+            <h2>Brand number: {{data1}}</h2><br>
+            <h2>Model number: {{data2}}</h2><br>
+            <h2>Operating system number: {{data3}}</h2><br>
+            <h2>Connectivity value: {{data4}}</h2><br>
+            <h2>Display Type value: {{data5}}</h2><br>
+            <h2>Display Size inches: {{data6}}</h2><br>
+            <h2>Resolution indices: {{data7}}</h2><br>
+            <h2>Water Resistance meters: {{data8}}</h2><br>
+            <h2>Battery Life days: {{data9}}</h2><br>
+            <h2>{{ prediction_text }}</h2> 
+           
+        </section> 
+        <!-- home section ends --> 
+ 
+
+        <!-- scroll top button  -->
+        <a href="#home" class="top"> 
+            <img src="images/scroll-top-img.png" alt="">
+        </a>
+
+</body>
+</html> 
