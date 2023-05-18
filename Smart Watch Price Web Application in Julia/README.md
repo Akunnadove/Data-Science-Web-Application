@@ -1,5 +1,5 @@
 # Smart Watch Price Prediction Web Application
-In this project, we perform data engineering, machine learning and deployment, and app development. This is a full cycle project as pictorally represented below. 
+In this project, we engage in data engineering, machine learning implementation, deployment, and application development. The project encompasses a comprehensive cycle, as depicted visually below.
 
 ![p4](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/3ef18c44-33eb-414c-b382-8c5bbc39886e)
 
