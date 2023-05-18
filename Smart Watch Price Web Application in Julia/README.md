@@ -1,9 +1,28 @@
-# DCT-Covid-Dashboard
-Covid19 dataset visualization using Google sheets
+# Smart Watch Price Prediction Web Application
+In this project, we perform data engineering, machine learning and deployment, and app development. This is a full cycle project as pictorally represented below. 
 
-# Here's the link to the Online Google sheet Dashboard
-https://docs.google.com/spreadsheets/d/18szS-FURs5-OmZCf-l_PIcmDfouM9baeZAEV6LA1Xzg
+![p4](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/3ef18c44-33eb-414c-b382-8c5bbc39886e)
 
-# Covid Dashboard Representation
-![Covid_Analysis_Dashboard](https://user-images.githubusercontent.com/66309302/166102171-cd1cf585-63ce-410c-bdaf-a0f53d226710.PNG)
-![Covid_Analysis_Dashboard 2](https://user-images.githubusercontent.com/66309302/166102302-982aa83b-fb88-4308-9640-bd44627d8c47.PNG)
+### Tools and languages used for these project include;
+* Julia
+* Python
+* Postgresql
+* HTML
+* CSS 
+* JavaScript
+
+# Objective
+* Import data from database
+* Perform exploratory data analysis using julia
+* Build and train machine learning model using julia
+* Crossvalidate the trained model using julia
+* Create web application using HTML, CSS and JavaScript
+* Deploy and launch model to production using python flask 
+* Share with and get feedback from other professionals
+
+# Requirements
+You must have the following set up;
+* Jupyternotebook
+* Python 
+* Julia
+* Local database
