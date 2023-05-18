@@ -22,12 +22,12 @@ In this project, we perform data engineering, machine learning and deployment, a
 
 # Website Application User Interface 
 * Tools: HTML, CSS and JavaScript
-## Web Form to take inputs for prediction
+#### Web Form to take inputs for prediction
 ![p1](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/474aa230-cbba-4875-a5e4-3c70068c80fd)
 
 ![p2](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/c65c353c-33af-4e6d-9475-fb654478844f)
 
-## Web Form to take inputs for prediction
+#### Web Form to take inputs for prediction
 ![p3](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/c2aa36ab-ff94-44ae-8022-92b003184ad2)
 
 # Requirements
