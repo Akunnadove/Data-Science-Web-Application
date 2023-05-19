@@ -1,7 +1,7 @@
 # Smart Watch Price Prediction Web Application
 In this project, we engage in data engineering, machine learning implementation, deployment, and application development. The project encompasses a comprehensive cycle, as depicted visually below.
 
-![p4](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/3ef18c44-33eb-414c-b382-8c5bbc39886e)
+![p4](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/d92e39fc-01f8-4797-bb98-5de0ff9eb241)
 
 ### Tools and languages used for these project include;
 * Julia
@@ -9,7 +9,6 @@ In this project, we engage in data engineering, machine learning implementation,
 * Postgresql
 * HTML
 * CSS 
-* JavaScript
 
 # Objective
 * Import data from database
@@ -21,7 +20,7 @@ In this project, we engage in data engineering, machine learning implementation,
 * Share with and get feedback from other professionals
 
 # Website Application User Interface 
-* Tools: HTML, CSS and JavaScript
+* Tools: HTML and CSS 
 #### Web Form to take inputs for prediction
 ![p1](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/474aa230-cbba-4875-a5e4-3c70068c80fd)
 
