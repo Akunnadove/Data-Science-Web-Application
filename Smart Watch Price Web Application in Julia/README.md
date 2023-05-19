@@ -11,13 +11,13 @@ In this project, we engage in data engineering, machine learning implementation,
 * CSS 
 
 # Objective
-⦁	Import data from the database
-⦁	Perform exploratory data analysis using Julia
-⦁	Build and train machine learning model using Julia
-⦁	Cross-validate the trained model using Julia
-⦁	Create web applications using HTML, CSS, and JavaScript
-⦁	Deploy and launch model to production using Python flask
-⦁ Share with and get feedback from other professionals
+*	Import data from the database
+*	Perform exploratory data analysis using Julia
+*	Build and train machine learning model using Julia
+*	Cross-validate the trained model using Julia
+*	Create web applications using HTML, CSS, and JavaScript
+*	Deploy and launch model to production using Python flask
+* Share with and get feedback from other professionals
 
 # Website Application User Interface 
 * Tools: HTML and CSS 
