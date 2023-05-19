@@ -27,7 +27,7 @@ In this project, we engage in data engineering, machine learning implementation,
 ![p2](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/c65c353c-33af-4e6d-9475-fb654478844f)
 
 #### Web Form to take inputs for prediction
-![p3](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/c2aa36ab-ff94-44ae-8022-92b003184ad2)
+![p3](https://github.com/Akunnadove/Data-Science-Web-Application/assets/66309302/af84116f-0a8b-47a3-87e0-b52cd41b10ed)
 
 # Requirements
 You must have the following set up;
