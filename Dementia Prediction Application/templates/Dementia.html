@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dementia Pro</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+         .portfolio ul {
+         list-style-type: none;
+         margin: 10px;
+         width: 100%;
+         align-content: center;
+         padding:0px 30%;
+         overflow: hidden;
+         background-color: #1a1a1a;
+         position: -webkit-sticky; /* Safari */
+         position: sticky;
+         top: 0;
+         }
+
+         .portfolio li {
+         float: left;
+         }
+
+         .portfolio li a {
+         display: block;;
+         color: white;
+         padding: 15px 15px;
+         text-decoration: none;
+         }
+
+         .portfolio li a:hover:not(.active) {
+         background-color: #111;
+         }
+
+         .portfolio .active {
+         background-color: #f9ca24;
+         color: #1a1a1a;
+         }
+
+         .container {
+         max-width: 800px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+
+         form {
+         width: 100%;
+         max-width: 400px;
+         padding: 40px;
+         background-color: #f2f2f2;
+         border-radius: 5px;
+         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+         }
+
+        h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background:var(--yellow);
+}
+    </style>
+</head>
+
+<body>
+    
+<!-- header section starts  -->
+<header>
+    <div class="user">
+        <img src="static/Dementia.jpg" alt="">
+        <h3 class="name">Dashboard</h3>
+        <p class="post">Dementia Predictor Application</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#portfolio">check status</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- header section ends -->
+
+
+<div id="menu" class="fas fa-bars"></div>
+
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <h1>Welcome to <span>Dementia pro version 6</span></h1>
+    <p>Dementia is a syndrome – usually of a chronic or progressive nature – in which there is deterioration in cognitive function.
+       Dementia results from a variety of diseases and injuries that primarily or secondarily affect the brain, such as Alzheimer's disease or stroke.
+       Dementia is one of the major causes of disability and dependency among older people worldwide. It can be overwhelming, not only for the people 
+       who have it, but also for their carers and families.
+</p>
+</section>
+<!-- home section ends -->
+
+
+
+<!-- portfolio section starts  -->
+<section class="portfolio" id="portfolio">
+<h1 class="heading"> Data <span>Form</span> </h1>
+  <div class="container">
+  <form action="{{ url_for('predict')}}"method="post" id="myForm">
+    <br>
+    <!--<label for="fullname">Full Name</label>
+    <input type="text" id="fullname" placeholder="Enter your full name" required>-->
+    
+    <label for="Visit">Visitations</label>
+    <input type="text" name="Visit" placeholder="Number of visitations" required>
+
+    <label for="MR Delay">Mr delay</label>
+    <input type="text" name="MR Delay" placeholder="Mr delay value" required> 
+
+    <label for="M/F">Gender</label>
+    <input type="text" name="M/F" name=placeholder="Select your gender" required>
+
+    <label for="Age">Age</label>
+    <input type="text" name="Age" placeholder="Select your age" required>
+
+    <label for="EDUC">Years of education</label>
+    <input type="text" name="EDUC" placeholder="Enter number in years of education" required>
+    
+    <label for="SES">Socioeconomic status</label>
+    <input type="text" name="SES" placeholder="Socioeconomic status value" required>
+
+    <label for="MMSE">Mini mental state examination</label>
+    <input type="text" name="MMSE" placeholder="Mini mental examination value" required>
+
+    <label for="CDR">Clinic dementia rating</label>
+    <input type="text" name="CDR" placeholder="Clinic dementia rating value" required>
+
+    <label for="eTIV">Estimated total intracranial volume</label>
+    <input type="text" name="eTIV" placeholder="Estimated total intracranial volume value" required>
+
+    <label for="nWBV">Normalize whole brain volume</label>
+    <input type="text" name="nWBV" placeholder="Brain volume value" required>
+
+    <label for="ASF">Atlas Scaling Factor</label>
+    <!--<input type="text" name="ASF" placeholder="Atlas scaling factor value" required>-->
+    <input type="text" name="ASF" placeholder="ASF" required="required" />
+
+    <button type="submit" onclick="convertToDigit()">Predict</button>
+    <br>
+    <br>
+      {{ prediction_text }}
+  </form>
+</div>
+</section>
+<!-- portfolio section ends -->
+
+
+<!-- scroll top button  -->
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<script type="text/javascript">
+      function convertToDigit() {
+        var form = document.getElementById("myForm");
+        var input = form.elements["visit"];
+        var number = parseInt(input.value);
+        alert("The digit is: " + number);
+      }
+    </script>
+
+</body>
+</html>
